@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>JIsaacWorx</title>
+
+		<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/master.css">
+		<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container" style="width: 95%;">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+					<i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand page-scroll" href="#page-top">
+					<i class="fa fa-play-circle"></i>  <span class="light">JIsaac</span>Worx
+				</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+				<ul class="nav navbar-nav">
+					<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#profile">About</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#github">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+
+	<!-- Header -->
+	<header>
+		<h1 class="tlt main-header">Live to Code</h1>
+	</header>
+
+	<!-- Main -->
+	<main class="container">
+
+		<!-- Profile -->
+		<section id="profile" class="clearfix">
+			<img src="images/headshot.jpg" class="col-xs-4 col-sm-3 img-circle" style="width: 23%; margin: 0 2% 2% 0;">
+			<div class="col-xs-8 col-sm-9">
+				<h2>J. Isaac Moreno</h2>
+				<h3 style="margin: 1% 0;">Full-Stack Web Developer</h3>
+				<h3>Fort Worth, TX</h3>
+			</div>
+			<p class="col-xs-12 col-sm-9">
+				Hello World! I'm a full-stack web developer. My experience includes HTML, CSS, Javascript, Ruby on Rails, PostgreSQL and others. I am currently a student at Thinkful. Check out my work below.
+			</p>
+			<p class="col-xs-12 col-sm-9">
+				If I am not coding my life away, I am producing music or writing a script for my next indy film. Check out my music <a href="https://soundcloud.com/novakumusic">here</a> at my Soundcloud page.
+			</p>
+		</section>
+
+		<!-- Portfolio -->
+		<section id="portfolio" class="col-xs-12">
+			<h2>Portfolio</h2>
+			<ul class="no-pad"> 
+				<!-- VIZIL -->
+				<li class="col-sm-6 col-md-4">
+					<div>
+						<a href="https://vizil-jaime-moreno.herokuapp.com/">
+							<h3>Vizil</h3>
+							<img src="images/vizil.png">
+						</a>
+						<p>
+							Vizil is a simplistic quote keeping application build on Ruby on Rails. The app uses PostgreSQL to store quotes. Adding a quote is done using the <i>Simple Form</i> gem which appears in a modal. Have fun adding a new quote.
+						</p>
+					</div>	
+				</li>
+
+				<!-- NOMSTER -->
+				<li class="col-sm-6 col-md-4">
+					<div>
+						<a href="https://nomster-jaime-moreno.herokuapp.com/">
+							<h3>Nomster</h3>
+							<img src="images/nomster.png">
+						</a>
+						<p>
+							Nomster is a Yelp clone build on Ruby on Rails. Users can create accounts, upload images, create a profile for a business, rate a business and comment on a business profile. The app also include the Google Maps API to display locations of each business. With the use of AWS S3 the application can store user's images.
+						</p>
+					</div>
+				</li>
+				
+				<!-- COGNITIO -->
+				<li class="col-sm-6 col-md-4">
+					<div>
+						<a href="https://cognitio-jaime-moreno.herokuapp.com/courses#">
+							<h3>Cognitio</h3>
+							<img src="images/cognitio.png">
+						</a>
+						<p>
+							Cognitio is a Udemy clone build on Ruby on Rails. User's can create accounts, upload images and videos, create courses, view courses and enroll in courses. The application even supports payment transactions via the <i>Stripe</i> API.
+						</p>
+					</div>
+				</li>
+				
+				<!-- CHESSTER -->
+				<li class="col-sm-6 col-md-4">
+					<div>
+						<a href="https://thecheckmates-chessapp.herokuapp.com/">
+							<h3>Chesster</h3>
+							<img src="images/chesster.png">
+						</a>
+						<p>
+							At the moment this application is still in development. Chesster is a Chess game application which incorporates all the rules of chess. The app is build on Ruby on Rails. The board features drag-n-drop for moving pieces. Players can create accounts and invite friends to play.
+						</p>
+					</div>
+				</li>
+				
+				<!-- EMPIRES -->
+				<li class="col-sm-6 col-md-4">
+					<div>
+						<a href="https://empires-battle-app.herokuapp.com/">
+							<h3>Empires</h3>
+							<img src="images/empires.png">
+						</a>
+						<p>
+							Empires is a battle simulation app which is build on Ruby on Rails. The application uses a simple algorithm which includes a bit chance to determine the winner of two armies. Anyone can create a new army and battle it against another.
+						</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<!-- GITHUB -->
+		<section style="display: inline-flex; width: 100%;">
+			<div id="github" class="box"> 
+				<p>Contact Me!</p>
+				<a href="https://github.com/xJIsaac">
+					<img src="images/github.png" style="width: 90px;"/>
+				</a>
+				<a href="https://www.linkedin.com/in/jaime-moreno-30b41859/">
+					<img src="images/Li-in-Bug.png" style="width: 90px;"/>
+				</a>
+			</div>
+		</section>
+	</main>
+
+	
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Lettering -->
+	<script src="js/jquery.lettering.js"></script>
+
+	<!-- Textillate -->
+	<script src="js/jquery.textillate.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="js/jquery.easing.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="js/grayscale.js"></script>
+</body>
+
+</html>

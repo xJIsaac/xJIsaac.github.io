@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+@import url("bootstrap.min.css");
+@import url("grayscale.css");
+@import url("animate.css");
+
+a:link {
+  color: #628293;
+}
+
+a:visited {
+  color: #9f645a;
+}
+
+body {
+  background-color: #141e2c;
+}
+
+.center-me {
+  margin: 0 auto;
+}
+
+}
+.flex-left {
+  padding: 1em 0e
+  background-color: #141e2c;m 1em 0em;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-start;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  color: #D7EBFE;
+  font-family: 'Lato', sans-serif;
+  color: #D7EBFE;
+  margin-bottom: 0;
+}
+
+h3  {
+  font-family: 'Lato', sans-serif;
+  color: #FEEDD7;
+  font-size: 1.8vmax;
+  margin: 2px 0px 18px 0px;
+  text-align: left;
+}
+
+h4 {
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  color: #DBEBFA;
+  margin: 0px 0px 0px 10px;
+  padding-bottom: 6px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 70vmax;
+  backg
+  position: relative;
+  width: 100%;
+  height: 70vmax;
+  background: linear-gradient(to bottom,rgba(22, 22, 22, 0) 0,rgba(22, 22, 22, 0) 75%,#141e2c 100%),url(../images/dawn.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  min-height: 35rem;
+  padding: 9rem 0 .25rem;round: linear-gradient(to bottom,rgba(22, 22, 22, 0) 0,rgba(22, 22, 22, 0) 75%,#141e2c 100%),url(../images/dawn.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  min-height: 35rem;
+  padding: 9rem 0 .25rem;
+}
+
+#github {
+  background: #3a4755;
+  width: fit-content;
+  padding: 3%;
+  line-height: 7; 
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  line-height: normal;
+  margin: 0;
+}
+
+.box {
+  background-color: rgba(53, 63, 93, 0.45);
+  text-align: center;
+  border-radius: 5px;
+  color: #FFF5E4;
+  width: 90%;
+  margin: 60px auto;
+}
+
+
+img {
+  border-radius: 5px;
+}
+
+.main-header {
+  color: hsla(203, 38%, 39%, 0.82);
+  font-family: 'Oswald', sans-serif;
+  font-size: 16vmax;
+  font-style: italic;
+  text-align: center;
+  right: 1vw;
+  margin: 0.7em 2.5vw 1.6em;
+  position: relative;
+  top: -10vmax;
+}
+
+.no-pad {
+  padding: 0
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Profile Sytles */
+#profile {
+  border-radius: 5px;
+}
+
+#profile p {
+  font-size: initial;
+  margin: 0.5em 0%;
+  width: 100%;
+}
+
+#profile * {
+  padding: 0
+}
+
+
+#portfolio {
+  padding: 0;
+}
+
+/* Portfolio Sytles */
+#portfolio div {
+  background: hsl(0, 38%, 40%);
+  border-radius: 6px;
+  padding: 0 1em;
+  height: 40em;
+  margin: 1em 0;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+#portfolio h2 {
+  text-align: center;
+  padding: 1em 0;
+}
+
+#portfolio h3 {
+  font-size: large;
+  margin: 0 0;
+  padding: 0.75em 0;
+}
+
+#portfolio p {
+  width: 100%;
+  margin: 1em 0;;
+}
+
+
+
