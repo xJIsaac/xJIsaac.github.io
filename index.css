@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/*
+CSS rules to specify families:
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+*/
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -93,8 +99,8 @@ img {
 }
 
 h1 {
-  color: hsl(203deg 65% 35% / 82%);
-  font-family: 'Montserrat', sans-serif;
+  color: hsl(203deg 37% 25% / 82%);
+  font-family: 'Permanent Marker', cursive;
   font-size: 16vmax;
   font-style: italic;
   text-align: center;
