@@ -32,12 +32,14 @@ body {
 }
 
 h1 {
-  color: hsl(203deg 37% 25% / 82%);
+  color: hsl(205deg 9% 39%);
   font-family: "Permanent Marker", cursive;
-  font-size: 16vmax;
+  font-size: 17vmax;
   font-style: italic;
   text-align: center;
-  top: -20vmax;
+  margin: 11.7vmax 4.1vmax;
+  letter-spacing: 0.1vmax;
+  line-height: 12.6vmax;
 }
 
 h3 {
@@ -56,8 +58,6 @@ h4 {
 
 header {
   margin-top: 60px;
-  width: 100%;
-  height: 70vmax;
   background: linear-gradient(
       to bottom,
       rgba(22, 22, 22, 0) 0,
@@ -66,11 +66,8 @@ header {
     ),
     url(./images/dawn.jpg);
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+  background-size: 155vmax;
   min-height: 35rem;
-  padding: 9rem 0 0.25rem;
 }
 
 #github {
@@ -173,10 +170,16 @@ ul {
 }
 
 .space-between {
+  display: flex;
   justify-content: space-between;
 }
 
 .v-center {
   display: flex;
   align-items: center;
+}
+
+.v-top {
+  display: flex;
+  align-items: flex-start;
 }
