@@ -26,6 +26,10 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  display: flex;
+}
+
 }
 .flex-left {
   padding: 1em 0e
@@ -163,6 +167,10 @@ ul {
 #portfolio p {
   width: 100%;
   margin: 1em 0;;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 
