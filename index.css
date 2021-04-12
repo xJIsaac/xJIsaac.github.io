@@ -15,7 +15,7 @@ a {
 }
 
 a:link {
-  color: #628293;
+  color: #ffbf73;
 }
 
 a:visited {
@@ -29,11 +29,28 @@ body {
 
 .container {
   display: flex;
-  padding: 10px;
 }
 
 .container div {
   margin: 0 20px;
+}
+
+.container {
+  border-radius: 5px;
+}
+
+.container .text > div,
+p {
+  margin: 0 0 15px;
+}
+
+.container .text h2,
+h3 {
+  margin: 0;
+}
+
+.column {
+  flex-direction: column;
 }
 
 h1 {
@@ -82,6 +99,7 @@ header {
 img {
   width: 100%;
   margin: 0 0 20px;
+  border-radius: 5px;
 }
 
 .box {
@@ -91,10 +109,6 @@ img {
   color: #fff5e4;
   width: 90%;
   margin: 60px auto;
-}
-
-img {
-  border-radius: 5px;
 }
 
 main {
@@ -124,50 +138,40 @@ ul {
 }
 
 /* Profile Sytles */
-#profile {
-  border-radius: 5px;
-}
-
-#profile .text > div,
-p {
-  margin: 0 0 15px;
-}
-
-#profile .text h2, h3 {
-  margin: 0;
-}
-
 #profile * {
   color: hsl(38deg 30% 84%);
 }
 
+/* Portfolio Sytles */
 #portfolio {
   padding: 0;
 }
 
-/* Portfolio Sytles */
-#portfolio div {
-  background: hsl(0, 38%, 40%);
-  border-radius: 6px;
+#portfolio > div {
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: wrap;
+}
+
+#portfolio > div > div {
+  background: hsl(337deg 22% 26%);
   padding: 0 1em;
-  height: 40em;
-  margin: 1em 0;
+  height: 30em;
+  margin: 1em 0.6em;
+  width: 20em;
+  color: #e6eaed;
 }
 
 #portfolio h2 {
   text-align: center;
-  padding: 1em 0;
+  margin: 2em 0;
+  color: #e2d9ca;
 }
 
 #portfolio h3 {
   font-size: large;
   margin: 0 0;
   padding: 0.75em 0;
-}
-
-#portfolio p {
-  width: 100%;
-  margin: 1em 0;
 }
 
 .space-between {
