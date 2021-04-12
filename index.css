@@ -75,6 +75,11 @@ h4 {
   padding-bottom: 6px;
 }
 
+.h-center {
+  display: flex;
+  justify-content: center;
+}
+
 header {
   margin-top: 60px;
   background: linear-gradient(
@@ -92,23 +97,18 @@ header {
 #github {
   background: #3a4755;
   width: fit-content;
-  padding: 3%;
-  line-height: 7;
+  padding: 10px 45px;
+  line-height: 2;
+  text-align: center;
+  color: #fff5e4;
+  border-radius: 5px;
+  margin: 60px auto;
 }
 
 img {
   width: 100%;
   margin: 0 0 20px;
   border-radius: 5px;
-}
-
-.box {
-  background-color: rgba(53, 63, 93, 0.45);
-  text-align: center;
-  border-radius: 5px;
-  color: #fff5e4;
-  width: 90%;
-  margin: 60px auto;
 }
 
 main {
