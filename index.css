@@ -151,8 +151,8 @@ main {
   font-size: small;
 }
 
-.no-pad {
-  padding: 0;
+.no-margin {
+  margin: 0 !important;
 }
 
 ul {

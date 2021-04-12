@@ -1,6 +1,7 @@
 const cards = [
   {
     link: "https://vizil-jaime-moreno.herokuapp.com/",
+    repoLink: "https://github.com/xJIsaac/vizil-rpstry",
     title: "Vizil",
     img: "./images/vizil.png",
     info:
@@ -8,6 +9,7 @@ const cards = [
   },
   {
     link: "https://nomster-jaime-moreno.herokuapp.com/",
+    repoLink: "https://github.com/xJIsaac/Nomster-JM",
     title: "Nomster",
     img: "./images/nomster.png",
     info:
@@ -15,6 +17,7 @@ const cards = [
   },
   {
     link: "https://cognitio-jaime-moreno.herokuapp.com/courses#",
+    repoLink: "https://github.com/xJIsaac/Cognitio",
     title: "Cognitio",
     img: "./images/cognitio.png",
     info:
@@ -22,6 +25,7 @@ const cards = [
   },
   {
     link: "https://thecheckmates-chessapp.herokuapp.com/",
+    repoLink: "https://github.com/The-Check-Mates/ChessApp",
     title: "Chesster",
     img: "./images/chesster.png",
     info:
@@ -29,6 +33,7 @@ const cards = [
   },
   {
     link: "https://empires-battle-app.herokuapp.com/",
+    repoLink: "https://github.com/xJIsaac/Empires",
     title: "Empires",
     img: "./images/empires.png",
     info:
@@ -36,18 +41,24 @@ const cards = [
   },
 ];
 
-function render(item) {
-  const { title, link, img, info } = item;
+function render({ title, link, repoLink, img, info }) {
   return `
     <!-- ${title} -->
-        <div class="container column">
-            <a href=${link}>
-                <h3>${title}</h3>
-                <img src=${img}>
-            </a>
-            <p>${info}</p>
-        </div>	
-    `;
+    <div class="container column">
+      <div class="space-between v-center no-margin">
+        <a href="${link}">
+          <h3>${title}</h3>
+        </a>
+        <a href="${repoLink}">
+          Repo
+        </a>
+      </div>
+      <a href="${link}">
+        <img src="${img}" />
+      </a>
+      <p>${info}</p>
+    </div>
+  `;
 }
 
 function loadPortfolio() {
