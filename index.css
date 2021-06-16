@@ -169,8 +169,7 @@ ul {
 }
 
 #profile img {
-  max-width: 30vw;
-  min-width: 20vw;
+  max-width: 480px;
 }
 
 /* Portfolio Sytles */
@@ -224,5 +223,9 @@ ul {
 
   #profile .text {
     margin: 0 20px;
+  }
+
+  #profile img {
+    max-width: 200px;
   }
 }
