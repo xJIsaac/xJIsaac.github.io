@@ -34,91 +34,94 @@
     </header>
 
     <!-- Main -->
-    <main>
-      <!-- Profile -->
-      <section class="container" id="profile">
-        <div>
-          <img src="./images/headshot.jpg" />
-        </div>
-        <div class="text">
+    <main class="h-center">
+      <div style="max-width: 60em">
+        <!-- Profile -->
+        <section class="container" id="profile">
           <div>
-            <h2>J. Isaac Moreno</h2>
-            <h3>Full-Stack Web Developer</h3>
-            <h3>Fort Worth, TX</h3>
+            <img src="./images/headshot.jpg" />
           </div>
-          <p>
-            Hello World! I'm a full-stack web developer. My experience includes
-            HTML, CSS, Javascript, React, Ruby on Rails, PostgreSQL and others.
-            I am currently a student at Thinkful. Check out my work below.
-          </p>
-          <p>
-            If I am not coding my life away, I am producing music or writing a
-            script for my next indy film. Check out my music
-            <a href="https://soundcloud.com/novakumusic">here</a> at my
-            Soundcloud page.
-          </p>
-        </div>
-      </section>
-
-      <!-- Portfolio -->
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <!-- portfolio cards here -->
-        <div></div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact">
-        <div>
-          <div class="space-between">
-            <h2>Contact Me</h2>
-            <div class="v-center">
-              <a href="https://github.com/xJIsaac">
-                <img src="./images/github.png" />
-              </a>
-              <a href="https://www.linkedin.com/in/jaime-moreno-30b41859/">
-                <img src="./images/lilogo.png" />
-              </a>
-            </div>
-          </div>
-          <form
-            class="column"
-            action="https://formspree.io/f/xzbybwjp"
-            method="POST"
-          >
-            <label for="user-name">First name:</label>
-            <input
-              id="user-name"
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-            />
-            <label for="user-email">Email:</label>
-            <input
-              id="user-email"
-              placeholder="Enter your email address"
-              type="email"
-              name="_replyto"
-            />
-            <label for="form-message">Your message:</label>
-            <textarea
-              id="form-message"
-              name="message"
-              autofocus="on"
-              required
-              maxlength="200"
-              placeholder="How can I help you?"
-            ></textarea>
+          <div class="text">
             <div>
-              <button type="submit">Send</button>
-              <button type="reset">Reset</button>
+              <h2>J. Isaac Moreno</h2>
+              <h3>Full-Stack Web Developer</h3>
+              <h3>Fort Worth, TX</h3>
             </div>
-          </form>
-        </div>
-      </section>
+            <p>
+              Hello World! I'm a full-stack web developer. My experience
+              includes HTML, CSS, Javascript, React, Ruby on Rails, PostgreSQL
+              and others. I am currently a student at Thinkful. Check out my
+              work below.
+            </p>
+            <p>
+              If I am not coding my life away, I am producing music or writing a
+              script for my next indy film. Check out my music
+              <a href="https://soundcloud.com/novakumusic">here</a> at my
+              Soundcloud page.
+            </p>
+          </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+          <h2>Portfolio</h2>
+          <!-- portfolio cards here -->
+          <div></div>
+        </section>
+      </div>
     </main>
 
+    <!-- Contact -->
+    <section id="contact">
+      <div>
+        <div class="space-between">
+          <h2>Contact Me</h2>
+          <div class="v-center">
+            <a href="https://github.com/xJIsaac">
+              <img src="./images/github.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/jaime-moreno-30b41859/">
+              <img src="./images/lilogo.png" />
+            </a>
+          </div>
+        </div>
+        <form
+          class="column"
+          action="https://formspree.io/f/xzbybwjp"
+          method="POST"
+        >
+          <label for="user-name">First name:</label>
+          <input
+            id="user-name"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+          />
+          <label for="user-email">Email:</label>
+          <input
+            id="user-email"
+            placeholder="Enter your email address"
+            type="email"
+            name="_replyto"
+          />
+          <label for="form-message">Your message:</label>
+          <textarea
+            id="form-message"
+            name="message"
+            autofocus="on"
+            required
+            maxlength="200"
+            placeholder="How can I help you?"
+          ></textarea>
+          <div>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <!-- JavaScript -->
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

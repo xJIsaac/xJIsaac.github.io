@@ -28,6 +28,10 @@ body {
   margin: auto;
 }
 
+.flex {
+  display: flex;
+}
+
 .container {
   display: flex;
 }
@@ -164,11 +168,12 @@ ul {
   color: hsl(38deg 30% 84%);
 }
 
-/* Portfolio Sytles */
-#portfolio {
-  padding: 0;
+#profile img {
+  max-width: 30vw;
+  min-width: 20vw;
 }
 
+/* Portfolio Sytles */
 #portfolio > div {
   justify-content: space-evenly;
   display: flex;
@@ -211,7 +216,7 @@ ul {
   align-items: flex-start;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   .container {
     display: flex;
     flex-direction: column;
