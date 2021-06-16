@@ -228,4 +228,12 @@ ul {
   #profile img {
     max-width: 200px;
   }
+
+  header {
+    margin-top: 0;
+  }
+
+  h1 {
+    margin: 30.7vmax 4.1vmax;
+  }
 }
