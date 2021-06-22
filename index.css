@@ -60,7 +60,7 @@ h3 {
 }
 
 #contact {
-  background: #32383e;
+  background: hsl(210deg 5% 10%);
   padding: 40px;
   line-height: 2.5;
   color: #fff5e4;
