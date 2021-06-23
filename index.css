@@ -250,6 +250,10 @@ ul {
     display: block;
   }
 
+  .navbar a {
+    font-size: x-small;
+  }
+
   #contact {
     padding: 36px 12px;
   }
