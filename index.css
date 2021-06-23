@@ -241,7 +241,9 @@ ul {
   }
 
   h1 {
-    margin: 30.7vmax 4.1vmax;
+    margin: 17.5vmax 2vmax;
+    font-size: 9vmax;
+    line-height: 8vmax;
   }
 
   .h-center {
