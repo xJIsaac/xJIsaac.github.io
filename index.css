@@ -289,8 +289,6 @@ ul {
     line-height: 8vmax;
   }
 
-  .navbar a {
-    font-size: x-small;
   #my-email {
     font-size: xx-small;
   }
@@ -298,5 +296,8 @@ ul {
   }
 
     width: auto;
+  }
+  .navbar a {
+    font-size: x-small;
   }
 }
