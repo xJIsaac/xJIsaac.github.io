@@ -77,6 +77,10 @@ h3 {
   margin: 60px 0 0;
 }
 
+#contact > div {
+  width: min(100%, 800px);
+}
+
 #contact h2 {
   margin: 0;
   line-height: normal;
@@ -256,10 +260,22 @@ ul {
 
   #profile .text {
     margin: 0 12px;
+  #contact {
+    padding: 36px 12px;
   }
 
   #profile img {
     max-width: 100px;
+  #contact form {
+    width: auto;
+  }
+
+  #contact img {
+    width: 40px;
+  }
+
+  #contact .space-between {
+    margin-bottom: 12px;
   }
 
   header {
@@ -275,13 +291,12 @@ ul {
 
   .navbar a {
     font-size: x-small;
+  #my-email {
+    font-size: xx-small;
   }
 
-  #contact {
-    padding: 36px 12px;
   }
 
-  #contact form {
     width: auto;
   }
 }
