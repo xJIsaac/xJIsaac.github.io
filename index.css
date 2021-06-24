@@ -258,14 +258,10 @@ ul {
     margin: 0 12px;
   }
 
-  #profile .text {
-    margin: 0 12px;
   #contact {
     padding: 36px 12px;
   }
 
-  #profile img {
-    max-width: 100px;
   #contact form {
     width: auto;
   }
@@ -293,8 +289,13 @@ ul {
     font-size: xx-small;
   }
 
+  #profile .text {
+    margin: 0 12px;
   }
 
+  #profile img {
+    max-width: 100px;
+  }
     width: auto;
   }
   .navbar a {
