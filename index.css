@@ -24,7 +24,7 @@ a:visited {
 }
 
 body {
-  background-color: #141e2c;
+  background-color: #1c2026;
   margin: auto;
 }
 
@@ -147,7 +147,7 @@ header {
       to bottom,
       rgba(22, 22, 22, 0) 0,
       rgba(22, 22, 22, 0) 75%,
-      #141e2c 100%
+      #1c2026 100%
     ),
     url(./images/dawn.jpg);
   background-position: center;
