@@ -176,7 +176,7 @@ main {
   top: 0;
   width: -webkit-fill-available;
   padding: 20px;
-  box-shadow: 0 -56px 44px 76px black;
+  box-shadow: 0 -56px 20px 60px black;
 }
 
 .navbar a {
