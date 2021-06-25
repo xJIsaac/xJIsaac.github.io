@@ -118,6 +118,11 @@ h3 {
   justify-content: flex-end;
 }
 
+#github-repo-img {
+  width: 30px;
+  margin: 0;
+}
+
 h1 {
   color: hsl(205deg 9% 39%);
   font-family: "Permanent Marker", cursive;
@@ -213,12 +218,13 @@ ul {
 }
 
 #portfolio > div > div {
-  background: hsl(337deg 22% 26%);
+  background: rgb(50 52 61);
   padding: 0 1em;
   height: 30em;
   margin: 1em 0.6em;
-  width: 18em;
+  width: min(320px, 40%);
   color: #e6eaed;
+  border: 3px solid #935d5b;
 }
 
 #portfolio h2 {
@@ -296,8 +302,11 @@ ul {
   #profile img {
     max-width: 100px;
   }
-    width: auto;
+
+  #portfolio > div > div {
+    width: min(100%, 450px);
   }
+
   .navbar a {
     font-size: x-small;
   }
