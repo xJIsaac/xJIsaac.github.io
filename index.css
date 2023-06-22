@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,900&family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 /*
 CSS rules to specify families:
   font-family: 'Montserrat', sans-serif;
@@ -42,24 +42,21 @@ button {
   display: flex;
 }
 
-.container {
+.profile-container {
   display: flex;
-}
-
-.container div {
-  margin: 0 20px;
-}
-
-.container {
   border-radius: 5px;
 }
 
-.container .text > div,
+.profile-container > div {
+  margin: 0 20px;
+}
+
+.profile-container .profile-text > div,
 p {
   margin: 0 0 15px;
 }
 
-.container .text h2,
+.profile-container .profile-text h2,
 h3 {
   margin: 0;
 }
@@ -96,7 +93,8 @@ h3 {
   font-size: smaller;
 }
 
-#contact input {
+#contact input,
+#contact textarea {
   background: #2b2f31;
   color: white;
   border: 2px solid hsl(216deg 15% 45%);
@@ -106,11 +104,7 @@ h3 {
 
 #contact textarea {
   height: 100px;
-  background: #2b2f31;
-  color: white;
-  border: 2px solid hsl(216deg 15% 45%);
   border-radius: 4px;
-  margin-bottom: 12px;
 }
 
 .flex-end {
@@ -201,16 +195,7 @@ ul {
   list-style-type: none;
 }
 
-/* Profile Sytles */
-#profile * {
-  color: hsl(38deg 30% 84%);
-}
-
-#profile img {
-  max-width: 480px;
-}
-
-/* Portfolio Sytles */
+/* Portfolio Styles */
 #portfolio > div {
   justify-content: space-evenly;
   display: flex;
@@ -255,12 +240,12 @@ ul {
 }
 
 @media screen and (max-width: 700px) {
-  .container {
+  .profile-container {
     display: flex;
     flex-direction: column;
   }
 
-  .container div {
+  .profile-container div {
     margin: 0 12px;
   }
 
@@ -293,14 +278,6 @@ ul {
 
   #my-email {
     font-size: xx-small;
-  }
-
-  #profile .text {
-    margin: 0 12px;
-  }
-
-  #profile img {
-    max-width: 100px;
   }
 
   #portfolio > div > div {
