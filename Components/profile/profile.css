@@ -11,7 +11,7 @@
 }
 
 .profile-image img {
-  max-width: 350px; /* Adjust the size as needed */
+  max-width: 450px;
   height: auto;
   border-radius: 50%;
 }
@@ -37,4 +37,20 @@
 .profile-description {
   font-size: 16px;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+  #profile {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    margin-right: 0;
+    align-self: flex-start; /* Align the image to the top left */
+  }
+
+  .profile-image img {
+    max-width: 120px;
+    width: 20vmin;
+  }
 }
