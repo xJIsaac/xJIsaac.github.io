@@ -1,4 +1,4 @@
-export const cards = [
+const cards = [
   {
     link: "https://vizil-jaime-moreno.herokuapp.com/",
     repoLink: "https://github.com/xJIsaac/vizil-rpstry",
@@ -35,3 +35,35 @@ export const cards = [
     info: "Empires is a battle simulation app which is build on Ruby on Rails. The application uses a simple algorithm which includes a bit chance to determine the winner of two armies. Anyone can create a new army and battle it against another.",
   },
 ];
+
+function render({ title, link, repoLink, img, info }) {
+  return `
+    <!-- ${title} -->
+    <div class="container column">
+      <div class="v-center no-margin">
+        <a href="${link}">
+          <h3>${title}</h3>
+        </a>
+        <div class="v-center">
+          <a href="${repoLink}">
+            <img src="./images/github.png" alt="github" id="github-repo-img" />
+          </a>
+        </div>
+      </div>
+      <a href="${link}">
+        <img src="${img}" />
+      </a>
+      <p>${info}</p>
+    </div>
+
+  `;
+}
+
+function loadPortfolio() {
+  const portfolioList = document.querySelector("#portfolio > div");
+  cards.forEach((card) => {
+    portfolioList.insertAdjacentHTML("beforeend", render(card));
+  });
+}
+
+window.addEventListener("DOMContentLoaded", loadPortfolio);
