@@ -1,0 +1,42 @@
+#portfolio > div {
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.portfolio-item {
+  background-color: #32343d;
+  padding: 1em;
+  margin: 1em;
+  width: min(320px, 40%);
+  color: #e6eaed;
+  border: 3px solid #935d5b;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-item:hover {
+  background-color: #424552;
+}
+
+.portfolio-item h2 {
+  text-align: center;
+  margin: 1em 0;
+  color: #e2d9ca;
+}
+
+.portfolio-item h3 {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+#github-img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 700px) {
+  #portfolio > div > div {
+    width: min(100%, 450px);
+  }
+}

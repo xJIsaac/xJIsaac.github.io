@@ -112,11 +112,6 @@ h3 {
   justify-content: flex-end;
 }
 
-#github-repo-img {
-  width: 30px;
-  margin: 0;
-}
-
 h1 {
   color: rgb(228 174 135);
   font-family: "Permanent Marker", cursive;
@@ -195,35 +190,6 @@ ul {
   list-style-type: none;
 }
 
-/* Portfolio Styles */
-#portfolio > div {
-  justify-content: space-evenly;
-  display: flex;
-  flex-flow: wrap;
-}
-
-#portfolio > div > div {
-  background: rgb(50 52 61);
-  padding: 0 1em;
-  height: 30em;
-  margin: 1em 0.6em;
-  width: min(320px, 40%);
-  color: #e6eaed;
-  border: 3px solid #935d5b;
-}
-
-#portfolio h2 {
-  text-align: center;
-  margin: 2em 0;
-  color: #e2d9ca;
-}
-
-#portfolio h3 {
-  font-size: large;
-  margin: 0 0;
-  padding: 0.75em 0;
-}
-
 .space-between {
   display: flex;
   justify-content: space-between;
@@ -240,15 +206,6 @@ ul {
 }
 
 @media screen and (max-width: 700px) {
-  .profile-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .profile-container div {
-    margin: 0 12px;
-  }
-
   #contact {
     padding: 36px 12px;
   }
@@ -278,10 +235,6 @@ ul {
 
   #my-email {
     font-size: xx-small;
-  }
-
-  #portfolio > div > div {
-    width: min(100%, 450px);
   }
 
   .navbar a {
