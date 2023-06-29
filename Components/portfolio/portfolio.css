@@ -4,6 +4,12 @@
   flex-flow: wrap;
 }
 
+#portfolio h2 {
+  text-align: center;
+  margin: 1em 0;
+  color: #e2d9ca;
+}
+
 .portfolio-item {
   background-color: #32343d;
   padding: 1em;
@@ -16,12 +22,6 @@
 
 .portfolio-item:hover {
   background-color: #424552;
-}
-
-.portfolio-item h2 {
-  text-align: center;
-  margin: 1em 0;
-  color: #e2d9ca;
 }
 
 .portfolio-item h3 {
