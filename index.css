@@ -1,13 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,900&family=Permanent+Marker&display=swap");
-
-/*
-CSS rules to specify families:
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Permanent Marker', cursive;
-*/
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300&display=swap");
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -114,7 +107,7 @@ h3 {
 
 h1 {
   color: rgb(228 174 135);
-  font-family: "Permanent Marker", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 15vmax;
   font-style: italic;
   text-align: center;
