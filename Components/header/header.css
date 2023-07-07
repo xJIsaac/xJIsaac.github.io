@@ -12,14 +12,15 @@ header {
 }
 
 h1 {
-  color: rgb(228, 174, 135);
+  /* color: rgb(228, 174, 135);  */
+  color: hsl(220 60% 50% / 1);
   font-family: "Bebas Neue", sans-serif;
   font-size: 20vmax;
   font-style: italic;
   text-align: center;
   margin: 11.7vmax 4.1vmax;
   letter-spacing: 0.1vmax;
-  line-height: 14.5vmax;
+  line-height: 15vmax;
 }
 
 @keyframes fadeIn {
