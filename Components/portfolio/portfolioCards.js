@@ -69,7 +69,6 @@ function animateCards() {
 
   portfolioItems.forEach((item) => {
     const itemPosition = item.getBoundingClientRect().top;
-    console.log("Item Position: " + itemPosition);
 
     // If the item is visible in the viewport or above it, animate it
     if (itemPosition < screenHeight || itemPosition <= 0) {
