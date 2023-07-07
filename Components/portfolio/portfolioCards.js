@@ -36,7 +36,7 @@ const cards = [
   },
 ];
 
-function render({ title, link, repoLink, img, info }) {
+function renderCard({ title, link, repoLink, img, info }) {
   return `
     <!-- ${title} -->
     <div class="portfolio-item">
@@ -55,15 +55,33 @@ function render({ title, link, repoLink, img, info }) {
       </a>
       <p>${info}</p>
     </div>
-
   `;
 }
 
-function loadPortfolio() {
+function renderPortfolio(cards) {
   const portfolioList = document.querySelector("#portfolio > div");
-  cards.forEach((card) => {
-    portfolioList.insertAdjacentHTML("beforeend", render(card));
+  portfolioList.innerHTML = cards.map(renderCard).join("");
+}
+
+function animateCards() {
+  const portfolioItems = document.querySelectorAll(".portfolio-item");
+  const screenHeight = window.innerHeight;
+
+  portfolioItems.forEach((item) => {
+    const itemPosition = item.getBoundingClientRect().top;
+    console.log("Item Position: " + itemPosition);
+
+    // If the item is visible in the viewport or above it, animate it
+    if (itemPosition < screenHeight || itemPosition <= 0) {
+      item.style.opacity = "1";
+      item.style.transform = "translateY(0)";
+    }
   });
 }
 
+function loadPortfolio() {
+  renderPortfolio(cards);
+}
+
 window.addEventListener("DOMContentLoaded", loadPortfolio);
+window.addEventListener("scroll", animateCards);
