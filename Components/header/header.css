@@ -54,6 +54,10 @@ h1#animated-text {
   font-size: small;
 }
 
+.navbar a:visited {
+  color: #ffbf73;
+}
+
 @media screen and (max-width: 700px) {
   header {
     /* margin-top: 0; */
@@ -64,9 +68,5 @@ h1#animated-text {
     font-size: 10vmax; /* Adjust the value based on your preference */
     margin: 5vmax 2vmax; /* Adjust the value based on your preference */
     line-height: 8vmax; /* Adjust the value based on your preference */
-  }
-
-  .navbar a {
-    font-size: x-small;
   }
 }
