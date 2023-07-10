@@ -1,3 +1,11 @@
+function loadNavbar() {
+  fetch("./Components/navbar/navbar.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+}
+
 function loadProfile() {
   fetch("./Components/profile/profile.html")
     .then((response) => response.text())
@@ -14,7 +22,8 @@ function loadHeader() {
     });
 }
 
-// Call the functions to load the header and footer
+// Call the functions to load the navbar, header, and footer
+loadNavbar();
 loadHeader();
 loadProfile();
 

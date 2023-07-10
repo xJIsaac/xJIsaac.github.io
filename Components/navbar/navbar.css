@@ -1,0 +1,45 @@
+#navbar {
+  font-size: medium;
+  color: #1c2026;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: -webkit-fill-available;
+  left: 0;
+  z-index: 9999;
+  padding: 30px;
+  box-shadow: none;
+  background-color: transparent;
+  transition: background-color 1s ease, padding 1s ease, color 1s ease,
+    box-shadow 1s ease;
+}
+
+#navbar.opaque {
+  /* Styles for opaque navbar */
+  background-color: hsl(203deg 20% 15%);
+  box-shadow: 0 -56px 20px 60px black;
+  padding: 10px; /* Update the desired padding */
+  color: white; /* Update the desired text color */
+}
+
+#navbar a {
+  margin: 0px 5px;
+}
+
+#navbar a:link {
+  color: inherit;
+}
+
+#navbar a:visited {
+  color: inherit;
+}
+
+@media screen and (max-width: 700px) {
+  #navbar {
+    padding: 20px;
+  }
+
+  #navbar a {
+    font-size: small;
+  }
+}

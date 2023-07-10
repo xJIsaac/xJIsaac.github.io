@@ -125,6 +125,7 @@ ul {
 .space-between {
   display: flex;
   justify-content: space-between;
+  width: inherit;
 }
 
 .v-top {
