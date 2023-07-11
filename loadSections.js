@@ -1,24 +1,32 @@
 function loadNavbar() {
-  fetch("./Components/navbar/navbar.html")
+  fetch("./components/navbar/navbar.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("navbar").innerHTML = data;
     });
 }
 
+function loadHeader() {
+  fetch("./components/header/header.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("header").innerHTML = data;
+    });
+}
+
 function loadProfile() {
-  fetch("./Components/profile/profile.html")
+  fetch("./components/profile/profile.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("profile").innerHTML = data;
     });
 }
 
-function loadHeader() {
-  fetch("./Components/header/header.html")
+function loadContact() {
+  fetch("./components/contact/contact.html")
     .then((response) => response.text())
     .then((data) => {
-      document.getElementById("header").innerHTML = data;
+      document.getElementById("contact").innerHTML = data;
     });
 }
 
@@ -26,6 +34,7 @@ function loadHeader() {
 loadNavbar();
 loadHeader();
 loadProfile();
+loadContact();
 
 window.addEventListener("load", function () {
   // Scroll to the top of the page
