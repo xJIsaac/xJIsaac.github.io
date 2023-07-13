@@ -5,6 +5,9 @@ const path = require("path");
 const app = express();
 const port = 3000;
 
+// Serve static files (CSS, images, etc.)
+app.use(express.static(__dirname));
+
 // Parse URL-encoded bodies (as sent by HTML forms)
 app.use(express.urlencoded({ extended: false }));
 
@@ -40,16 +43,13 @@ app.post("/send-email", (req, res) => {
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error);
-      res.status(500).json({ message: "Error occurred while sending email" });
+      res.sendStatus(500); // Send a status code indicating an error occurred
     } else {
       console.log("Email sent: " + info.response);
-      res.json({ message: "Email sent successfully" });
+      res.sendStatus(200); // Send a status code indicating success
     }
   });
 });
-
-// Serve static files (CSS, images, etc.)
-app.use(express.static(__dirname));
 
 // Start the server
 app.listen(port, () => {
