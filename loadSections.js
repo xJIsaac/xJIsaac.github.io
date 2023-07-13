@@ -1,42 +1,23 @@
-function loadNavbar() {
-  fetch("./components/navbar/navbar.html")
+import "./Components/portfolio/portfolioCards.js";
+import "./Components/header/header.js";
+import "./Components/navbar/navbar.js";
+import "./form.js";
+
+const fetchAndSetData = (url, elementId) => {
+  fetch(url)
     .then((response) => response.text())
     .then((data) => {
-      document.getElementById("navbar").innerHTML = data;
+      document.getElementById(elementId).innerHTML = data;
     });
-}
+};
 
-function loadHeader() {
-  fetch("./components/header/header.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("header").innerHTML = data;
-    });
-}
+fetchAndSetData("./components/navbar/navbar.html", "navbar");
+fetchAndSetData("./components/header/header.html", "header");
+fetchAndSetData("./components/profile/profile.html", "profile");
+fetchAndSetData("./components/contact/contact.html", "contact");
 
-function loadProfile() {
-  fetch("./components/profile/profile.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("profile").innerHTML = data;
-    });
-}
-
-function loadContact() {
-  fetch("./components/contact/contact.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("contact").innerHTML = data;
-    });
-}
-
-// Call the functions to load the navbar, header, and footer
-loadNavbar();
-loadHeader();
-loadProfile();
-loadContact();
-
-window.addEventListener("load", function () {
-  // Scroll to the top of the page
-  window.scrollTo(0, 0);
+window.addEventListener("load", () => {
+  setTimeout(function () {
+    window.scrollTo(0, 0);
+  }, 100);
 });
