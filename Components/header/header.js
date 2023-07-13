@@ -1,4 +1,6 @@
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
   var animatedText = document.getElementById("animated-text");
-  animatedText.style.opacity = "1";
+  if (animatedText) {
+    animatedText.style.opacity = "1";
+  }
 });
