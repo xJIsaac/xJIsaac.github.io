@@ -9,10 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const initializeForm = (form) => {
     const notification = document.querySelector("#formNotification");
+    const loading = document.querySelector("#loading");
+
     form.addEventListener("submit", (e) => {
       e.preventDefault(); // Prevent the default form submission behavior
 
-      // Display a loading message or spinner to indicate the submission is in progress
+      // Display the loading element
+      loading.style.display = "block";
 
       // Perform the form submission using Fetch API or XMLHttpRequest
       fetch("/send-email", {
@@ -34,6 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
           // Display an error notification near the form
           showNotification("Error occurred while sending email", "error");
           console.log(error);
+        })
+        .finally(() => {
+          // Hide the loading element
+          loading.style.display = "none";
         });
     });
 

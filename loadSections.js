@@ -19,5 +19,5 @@ fetchAndSetData("./components/contact/contact.html", "contact");
 window.addEventListener("load", () => {
   setTimeout(function () {
     window.scrollTo(0, 0);
-  }, 100);
+  }, 75);
 });

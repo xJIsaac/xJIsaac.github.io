@@ -16,6 +16,7 @@
     </div>
   </div>
   <!-- Contact form -->
+
   <form id="contact-form" class="column" action="/send-email" method="POST">
     <label for="user-name">First name:</label>
     <input
@@ -43,6 +44,10 @@
     <div>
       <button type="submit">Send</button>
       <button type="reset">Reset</button>
+    </div>
+    <div id="loading" class="loading-spinner">
+      <div class="spinner"></div>
+      <div class="loading-text">Submitting...</div>
     </div>
     <div id="formNotification"></div>
   </form>
