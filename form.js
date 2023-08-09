@@ -22,20 +22,22 @@ document.addEventListener("DOMContentLoaded", () => {
         method: "POST",
         body: new FormData(form),
       })
-        .then((response) => {
-          if (response.ok) {
-            // Display a success notification near the form
-            showNotification("Email sent successfully", "success");
+        .then((response) => response.json()) // Parse response as JSON
+        .then((data) => {
+          if (data.error) {
+            // Display error notification near the form
+            showNotification(data.error, "error");
+          } else if (data.message) {
+            // Display success notification near the form
+            showNotification(data.message, "success");
 
             // Clear the form fields if needed
             form.reset();
-          } else {
-            throw new Error("Error occurred while sending email");
           }
         })
         .catch((error) => {
-          // Display an error notification near the form
-          showNotification("Error occurred while sending email", "error");
+          // Display a generic error message near the form
+          showNotification("An unexpected error occurred", "error");
           console.log(error);
         })
         .finally(() => {

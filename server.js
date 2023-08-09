@@ -44,10 +44,11 @@ app.post("/send-email", (req, res) => {
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error);
-      res.sendStatus(500); // Send a status code indicating an error occurred
+      const errorMessage = "An error occurred while sending the email.";
+      res.status(500).json({ error: errorMessage }); // Send a status code indicating an error occurred
     } else {
       console.log("Email sent: " + info.response);
-      res.sendStatus(200); // Send a status code indicating success
+      res.status(200).json({ message: "Email sent successfully." }); // Send a status code indicating success
     }
   });
 });
