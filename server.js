@@ -1,9 +1,10 @@
+require("dotenv").config();
 const express = require("express");
 const nodemailer = require("nodemailer");
 const path = require("path");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // Use the provided port or default to 3000
 
 // Serve static files (CSS, images, etc.)
 app.use(express.static(__dirname));
@@ -20,21 +21,21 @@ app.get("/", (req, res) => {
 app.post("/send-email", (req, res) => {
   const { name, _replyto, message } = req.body;
 
-  // Create a nodemailer transporter using your email service provider's settings
+  // Create a nodemailer transporter using environment variables
   const transporter = nodemailer.createTransport({
-    host: "smtp.hostinger.com",
-    port: 465,
+    host: process.env.EMAIL_HOST,
+    port: process.env.EMAIL_PORT,
     secure: true,
     auth: {
-      user: "jaime@jisaacworx.com",
-      pass: "Guitar88!",
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASSWORD,
     },
   });
 
   // Compose the email
   const mailOptions = {
-    from: "jaime@jisaacworx.com",
-    to: "jaime@jisaacworx.com",
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER,
     subject: "New contact form submission",
     text: `Name: ${name}\nEmail: ${_replyto}\nMessage: ${message}`,
   };
